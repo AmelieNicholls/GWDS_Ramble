@@ -23,24 +23,42 @@ h1, h2, h3 {
 
 :root {
     --background-colour: #f4f1ea;
-    --heading-colour: #e4572e;
-    --text-colour: #200801 !important;
+    
 }
 
 body {
     background-color: var(--background-colour);
-    color: #200801 !important;
+    color: #200801;
     padding-top: 70px;
-    font-family: pacaembu !important;
+    font-family: Pacaembu !important;
 
 }
 
-h1, h2, h3 {
-    color: var(--heading-colour);
+h1 {
+    color: #e4572e;
+    font-family: Pacaembu !important;
+    font-weight: bold;
+    font-size: 30px;
 }
 
+h2 {
+    color: #e4572e;
+    font-family: Pacaembu !important;
+    font-weight: regular;
+}
 
-/* intro animation starting state */
+h3 {
+    color: #200801;
+    font-family: Pacaembu !important;
+    font-weight: light; 
+}
+
+.intro-text {
+    color: #e4572e;
+    font-family: Pacaembu !important;
+    font-weight: light;
+    font-size: 18px;
+}
 
 .intro-section {
     opacity: 0;
@@ -69,7 +87,15 @@ h1, h2, h3 {
 
 .footer {
     background-color: #200801 !important;
+    color:#f4f1ea
 }
+
+footer a.btn {
+    background-color: #e4572e !important;
+    border: none;
+}
+
+
 
 .navbar .nav-link {
     color: #200801 !important;
