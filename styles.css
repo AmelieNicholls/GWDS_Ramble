@@ -1,11 +1,92 @@
-.hero-background {
-            background-image: url('images/logotypes/Logotype_1_photo.jpg'); /* Change this to your image */
-            background-size: cover;
-            background-position: center;
-            height: 90vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
+/* colours */
+
+body {
+    background-color: #f4f1ea;
+    color: #200801;
+}
+
+h1, h2, h3 {
+    color: #e4572e;
+}
+
+/* food image hover */
+
+.food-section .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.food-section .col-6 {
+    padding-left: 8px;   /* half gutter */
+    padding-right: 8px;  /* half gutter */
+}
+
+:root {
+    --background-colour: #f4f1ea;
+    --heading-colour: #e4572e;
+    --text-colour: #200801 !important;
+}
+
+body {
+    background-color: var(--background-colour);
+    color: #200801 !important;
+    padding-top: 70px;
+    font-family: pacaembu !important;
+
+}
+
+h1, h2, h3 {
+    color: var(--heading-colour);
+}
+
+
+/* intro animation starting state */
+
+.intro-section {
+    opacity: 0;
+}
+
+/* food images */
+
+.meal-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.meal-image:hover {
+    transform: none;
+}
+
+.navbar {
+    background-color: #f4f1ea;   /* initial colour */
+    transition: background-color 0.3s ease;  /* smooth change */
+}
+
+.navbar.scrolled {
+    background-color: #e4572e;   /* colour after scrolling */
+}
+
+.footer {
+    background-color: #200801 !important;
+}
+
+.navbar .nav-link {
+    color: #200801 !important;
+}
+
+.navbar.scrolled .nav-link {
+    color: #f4f1ea !important;
+}
+
+body.menu-page .navbar,
+body.book-page .navbar,
+body.findus-page .navbar {
+    background-color: #e4572e !important;
+}
+
+body.menu-page .navbar .nav-link,
+body.book-page .navbar .nav-link,
+body.findus-page .navbar .nav-link {
+    color: #f4f1ea !important;
+} 
