@@ -146,7 +146,36 @@ body.findus-page .navbar .nav-link {
     transition: transform 0.3s ease;
 }
 
-.food-section .container {
-    padding-left: 15px; 
-    padding-right: 15px;
+.food-section {
+  padding: 0 1rem; 
+}
+
+.food-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 1rem; 
+}
+
+.food-item {
+  flex: 0 0 48%; 
+  text-align: center;
+}
+
+.food-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.food-item img:hover {
+  transform: scale(1.05);
+}
+
+
+@media (min-width: 768px) {
+  .food-item {
+    flex: 0 0 22%; 
+  }
 }
