@@ -145,3 +145,8 @@ body.findus-page .navbar .nav-link {
     transform: scale(1.03);
     transition: transform 0.3s ease;
 }
+
+.food-section .container {
+    padding-left: 15px; 
+    padding-right: 15px;
+}
