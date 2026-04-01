@@ -48,9 +48,6 @@ window.addEventListener("load", function () {
 window.addEventListener("scroll", function () {
 
     const navbar = document.querySelector(".navbar");
-
-    if (!navbar) return;
-
     if (window.scrollY > 40) {
         navbar.classList.add("scrolled");
     } else {
@@ -86,5 +83,22 @@ dateInput.addEventListener("change", function () {
         
         timeInput.min = "17:00";
         timeInput.max = "22:00";
+    }
+});
+
+
+gsap.from(".booking-hero-image", {
+    opacity: 0,
+    duration: 1.5
+});
+
+gsap.from(".decorative-image", {
+    opacity: 0,
+    y: 40,
+    duration: 1,
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: ".booking-form",
+        start: "top 80%"
     }
 });
