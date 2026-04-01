@@ -8,17 +8,6 @@ h1, h2, h3 {
     color: #e4572e;
 }
 
-
-.food-section .row {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.food-section .col-6 {
-    padding-left: 8px;  
-    padding-right: 8px;  
-}
-
 :root {
     --background-colour: #f4f1ea;
 }
@@ -65,6 +54,7 @@ h3 {
 .meal-image {
     width: 100%;
     height: auto;
+    display: block;
     transition: transform 0.3s ease;
 }
 
