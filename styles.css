@@ -147,9 +147,9 @@ body.findus-page .navbar .nav-link {
 }
 
 .food-section .container {
-    max-width: 70%;   /* remove Bootstrap container max-width */
-    padding-left: 8;   /* remove left padding */
-    padding-right: 0;  /* remove right padding */
+    max-width: 70%; 
+    padding-left: 8;  
+    padding-right: 0;  
 }
 
 .food-grid {
