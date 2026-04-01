@@ -1,0 +1,11 @@
+.hero-background {
+            background-image: url('images/logotypes/Logotype_1_photo.jpg'); /* Change this to your image */
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
