@@ -1,12 +1,8 @@
-// ================= GSAP SETUP =================
-
 gsap.registerPlugin(ScrollTrigger);
-
-// ================= PAGE LOAD =================
 
 window.addEventListener("load", function () {
 
-    // HERO FADE IN
+    
 
     gsap.from("#hero-image", {
     opacity: 0,
@@ -14,7 +10,7 @@ window.addEventListener("load", function () {
     ease: "power2.out"
 });
 
-    // INTRO POP UP
+    
 
     gsap.to(".intro-section", {
         opacity: 1,
@@ -26,7 +22,7 @@ window.addEventListener("load", function () {
         }
     });
 
-    // FOOD IMAGES SLIDE IN
+    
 
     gsap.from(".meal-image", {
         opacity: 0,
@@ -39,7 +35,7 @@ window.addEventListener("load", function () {
         }
     });
 
-    // MENU PAGE FADE IN
+    
 
     gsap.from(".page-content", {
         opacity: 0,
@@ -48,8 +44,6 @@ window.addEventListener("load", function () {
     });
 
 });
-
-// ================= NAVBAR COLOUR CHANGE =================
 
 window.addEventListener("scroll", function () {
 
@@ -72,4 +66,25 @@ document.querySelectorAll(".meal-image").forEach(image => {
   image.addEventListener("mouseleave", () => {
     gsap.to(image, { scale: 1, duration: 0.3, ease: "power1.out" });
   });
+});
+
+const dateInput = document.getElementById("date");
+const timeInput = document.getElementById("time");
+
+dateInput.addEventListener("change", function () {
+    const selectedDate = new Date(this.value);
+    const day = selectedDate.getDay();
+
+    // using Sunday = 0
+    // using Saturday = 6
+
+    if (day === 0 || day === 6) {
+        
+        timeInput.min = "11:00";
+        timeInput.max = "22:00";
+    } else {
+        
+        timeInput.min = "17:00";
+        timeInput.max = "22:00";
+    }
 });
